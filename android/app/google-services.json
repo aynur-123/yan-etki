@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "339408766548",
+    "project_id": "yan-etki",
+    "storage_bucket": "yan-etki.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:339408766548:android:53ac06e53b93b1f55b0fc1",
+        "android_client_info": {
+          "package_name": "com.aynursonmez.yan_etki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "339408766548-gp6j7662vlcvpk3gihmkalfvhcgvfk0l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmE09qbLM9mY_ypP_4SbwgCr8lGpugt7c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "339408766548-gp6j7662vlcvpk3gihmkalfvhcgvfk0l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
