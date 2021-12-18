@@ -1,5 +1,9 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:yan_etki/kisisel_bilgiler.dart';
+
+import 'ElleBarkod.dart';
+import 'ScanScreen.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -32,13 +36,17 @@ class _HomePageState extends State<HomePage> {
                   Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      Icon(
-                        Icons.camera_alt,
+                      IconButton(
+                        icon: Icon(Icons.camera_alt),
                         color: Colors.black,
-                        size: 100,
+                        iconSize: 100,
+                        onPressed: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => ScanScreen()),
+                        ),
                       ),
                       Text(
-                        'KAREKODU OKUT',
+                        'BARKOD OKUT',
                         style: TextStyle(fontWeight: FontWeight.bold),
                       )
                     ],
@@ -46,13 +54,17 @@ class _HomePageState extends State<HomePage> {
                   Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      Icon(
-                        Icons.text_snippet_sharp,
+                      IconButton(
+                        icon: Icon(Icons.text_snippet_sharp),
                         color: Colors.black,
-                        size: 100,
+                        iconSize: 100,
+                        onPressed: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => ElleBarkod()),
+                        ),
                       ),
                       Text(
-                        'ELLE KAREKOD\nSORGULAMA',
+                        'ELLE BARKOD\nSORGULAMA',
                         textAlign: TextAlign.center,
                         style: TextStyle(fontWeight: FontWeight.bold),
                       )

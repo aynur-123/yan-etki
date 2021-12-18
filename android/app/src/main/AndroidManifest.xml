@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.aynursonmez.yan_etki">
+    <uses-permission android:name="android.permission.CAMERA" />
    <application
         android:label="yan_etki"
         android:icon="@mipmap/ic_launcher">
